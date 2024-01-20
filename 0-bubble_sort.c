@@ -18,7 +18,8 @@ void swap(int *a, int *b)
 }
 
 /**
- * bublle_sort - a function that sorts an array of integers in ascending order using the Bubble sort algorithm
+ * bublle_sort - a function that sorts an array of
+ * integers in ascending order using the Bubble sort algorithm
  * @array: the array to sort
  * @size: the size of array
  *
@@ -45,6 +46,6 @@ void bubble_sort(int *array, size_t size)
 				B = 0;
 			}
 		}
-		lenght --;
+		lenght--;
 	}
 }
