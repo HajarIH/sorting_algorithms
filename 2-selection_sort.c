@@ -29,17 +29,20 @@ void swap(int *a, int *b)
 void selection_sort(int *array, size_t size)
 {
 	size_t i, j;
+	int *min;
 
 	if (array == NULL || size < 2)
 		return;
 
 	for (i = 0; i < size - 1; i++)
 	{
+		min = array + i;
 		for (j = i; j < size; j++)
 		{
-			if (array[j] < array[i])
-				swap(array + i, array + j);
+			if (array[j] < *min)
+				min = array + j;
 		}
+		swap(array + i, min);
 		print_array(array, size);
 	}
 }
