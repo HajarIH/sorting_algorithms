@@ -1,7 +1,8 @@
 #include "sort.h"
 
 /**
- * swap_node: a function to swap node
+ * swap_node - a function to swap node
+ * @h: the head
  * @n1: the first node
  * @n2: the second node
  *
