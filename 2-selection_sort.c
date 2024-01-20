@@ -42,7 +42,11 @@ void selection_sort(int *array, size_t size)
 			if (array[j] < *min)
 				min = array + j;
 		}
-		swap(array + i, min);
-		print_array(array, size);
+		if (array + i != min)
+		{
+			swap(array + i, min);
+			print_array(array, size);
+		
+		}
 	}
 }
